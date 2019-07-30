@@ -1,15 +1,22 @@
-# CSCI640 Group Project
+# CSCI551 Inquiry Based Group Project
 
 ## Goals
 This project has the following goals:
 
-* Students work in a group
-* Project sets out to answer a question about a topic related to Operating System Concepts
+* Students work in a team
+* Project sets out to answer a question about a topic related to numerical methods or parallel programming. 
 * Students find a survey of research work as the starting point of their project
 * Students devise a way to test and/or gain understanding about the question they are trying to ask through a hands on implementation of the concept.
 	* Should come up with a procedure or method for testing the effectiveness of known solutions or their solutions.
 * Students present their findings to the class
 * Students write up a document with their findings
+
+
+## Example
+An example might be:
+
+* How does the performance of a modern parallel programming language, like [Chapel](https://chapel-lang.org/) or [UPC](https://upc.lbl.gov/) compare to solving the same problem in C++ w/ OpenMPI?
+
 
 ## Evaluation
 
