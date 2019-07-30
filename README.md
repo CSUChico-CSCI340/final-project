@@ -12,8 +12,8 @@ This project has the following goals:
 * Students write up a document with their findings
 
 
-## Example
-An examples might be:
+## Examples
+Examples might be:
 
 * How does the performance of a modern parallel programming language, like [Chapel](https://chapel-lang.org/) or [UPC](https://upc.lbl.gov/) compare to solving the same problem in C++ w/ OpenMPI?
 * What is the performance cost of solving the same problem in MPI with Python vs C++?
