@@ -27,5 +27,5 @@ Your project will be graded based on the following components.
 	* How you will answer the question/test your understanding
 * Papers - You will need to find a minimum of 4 papers that relate to your topic or try to solve the question you are wanting to answer. These cannot all come from the same research group/team.
 * Presentation - You will need to give a short 5-10 minute presentation to the class on what you were trying to answer, how you tested, and what findings you discovered
-* Periodic Check in - I will meet with your group part way through to determine if you are making adequate progress on your project.
+* Lab Check in - There will be a few weeks of class where we'll have open time for you to work with your teams and check in with me about any issues you're running into and so I can see progress is being made. 
 * Paper - You will submit a short paper describing what you were trying to answer, how you tested it, the testing results, and what you learned from these results.
