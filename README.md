@@ -15,7 +15,8 @@ This project has the following goals:
 ## Examples
 Examples might be:
 
-* How does the performance of a modern parallel programming language, like [Chapel](https://chapel-lang.org/) or [UPC](https://upc.lbl.gov/) compare to solving the same problem in C++ w/ OpenMPI?
+* How does the performance of a modern parallel programming language, like [Chapel](https://chapel-lang.org/), [Charm++](http://charmplusplus.org/) or [UPC](https://upc.lbl.gov/) compare to solving the same problem in C++/Python/Rust w/ OpenMPI?
+* What alternatives to Apache Spark are there? How does the performance/ease of implementation compare to Apache Spark for a significantly complex problem?
 * What is the performance cost of solving the same problem in MPI with Python vs C++?
 	* How about with GPUs?
 
