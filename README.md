@@ -4,7 +4,7 @@
 This project has the following goals:
 
 * Students work in a team
-* Project sets out to answer a question about a topic related to numerical methods or parallel programming. 
+* Team sets out to answer a question per student about a topic related to numerical methods or parallel programming. 
 * Students find a survey of research work as the starting point of their project
 * Students devise a way to test and/or gain understanding about the question they are trying to ask through a hands on implementation of the concept.
 	* Should come up with a procedure or method for testing the effectiveness of known solutions or their solutions.
