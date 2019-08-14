@@ -19,6 +19,10 @@ Examples might be:
 * What alternatives to Apache Spark are there? How does the performance/ease of implementation compare to Apache Spark for a significantly complex problem?
 * What is the performance cost of solving the same problem in MPI with Python vs C++?
 	* How about with GPUs?
+	* How about Python w/ [Numba JIT compilation](https://numba.pydata.org/numba-doc/latest/index.html)?
+	* Compiled Python?
+	* Rust w/ MPI?
+* How might containers like Docker, LXC, rkt, etc impact running MPI, Spark, or other parallel programming approach's performance vs native deployments? 
 
 
 ## Evaluation
