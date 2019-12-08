@@ -36,3 +36,12 @@ Your project will be graded based on the following components.
 * Presentation - You will need to give a short 5-10 minute presentation to the class on what you were trying to answer, how you tested, and what findings you discovered
 * Lab Check in - There will be a few weeks of class where we'll have open time for you to work with your teams and check in with me about any issues you're running into and so I can see progress is being made. 
 * Paper - You will submit a short paper describing what you were trying to answer, how you tested it, the testing results, and what you learned from these results.
+* Code - You must submit the code for your project along with the paper submission. 
+
+## Project Submission
+
+At least one member of every team should submit a tar.gz to Tyson's Turnin system, the tar.gz should have the following:
+
+* PDF of your paper that discusses your results, analysis, motivation, conclusions, etc. 
+* All of the code for you used for your project. 
+	* Alternatively you can add me to a repository with all your code for the project, and just put a README in the tar.gz with the link to this repository. 
