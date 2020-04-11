@@ -10,7 +10,7 @@ This project has the following goals:
 
 
 ## Sample Questions
-Recommended questions, you are welcome to propose a different one but these are pre-approved:
+Recommended questions, you are welcome to propose a different one but these are pre-approved, if you want to answer a different question you need to get approval so email me with your question and how you plan to test it:
 
 * How does the performance of threads in C compare to one of the following languages?
 	* Python
