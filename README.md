@@ -48,14 +48,10 @@ Recommended questions, you are welcome to propose a different one but these are 
 
 Your project will be graded based on the following components.
 
-* Proposal - You need to submit a proposal via email:
-	* Question you want to answer
-	* How you will answer the question/test it
-		* Testing setup
-		* How you will run the tests
 * Paper - You will submit a short paper describing the following:
 	* What is your question
 	* Your experimental setup (machine, etc)
+		* Are there any side effects or artifacts related to your experimental setup that might impact your results?
 	* How you ran your tests to answer your question
 	* Test results:
 		* How accurate are they? 
