@@ -41,9 +41,6 @@ Recommended questions, you are welcome to propose a different one but these are 
 	* Java
 	* Other (get approval)
 
-
-
-
 ## Evaluation
 
 Your project will be graded based on the following components.
@@ -71,3 +68,7 @@ You will submit a tar.gz to Tyson's Turnin system, the tar.gz should have the fo
 * PDF of your paper that discusses your results, analysis, motivation, conclusions, etc. 
 * All of the code for you used for your project. 
 	* Alternatively you can add me to a repository with all your code for the project, and just put a README in the tar.gz with the link to this repository. 
+	
+## Extra Credit
+
+You can get an additional 10 points of extra credit for every additional question you answer. 
