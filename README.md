@@ -25,7 +25,7 @@ Recommended questions, you are welcome to propose a different one but these are 
 		* xfs
 		* FAT32
 		* ZFS
-		* BTFS
+		* BTRFS
 		* NTFS (might be CIFS under linux)
 * How does the performance of differing IPC mechanisms compare in C to one of the following languages?
 	* Python
