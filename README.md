@@ -33,7 +33,7 @@ Recommended questions, you are welcome to propose a different one but these are 
 	* Go
 	* Java
 	* Other (get approval)
-* How much does Docker virtualization impact the performance of threads compared to a native system in one of the following languages?
+* As an Extra Credit question: How much does Docker virtualization impact the performance of threads compared to a native system in one of the following languages?
 	* C
 	* Python
 	* Rust
