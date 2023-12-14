@@ -63,7 +63,7 @@ Your project will be graded based on the following components.
 
 ## Project Submission
 
-You will submit a tar.gz to Tyson's Turnin system, the tar.gz should have the following:
+You will submit a tar.gz to INGInious system, the tar.gz should have the following:
 
 * PDF of your paper that discusses your results, analysis, motivation, conclusions, etc. 
 * All of the code for you used for your project. 
