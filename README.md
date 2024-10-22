@@ -18,7 +18,7 @@ Recommended questions, you are welcome to propose a different one but these are 
 	* Go
 	* Java
 	* Other (get approval)
-* What file system performs best for small files on Linux? Or alternatively what about for large files? (using IOzone, bonnie++, or dd for benchmarks) 
+* What file system performs best for small files on Linux? Or alternatively what about for large files? (using dd for benchmarks, don't use IOzone or bonnie++) 
 	* Consider at least 5 of the following filesystems:
 		* ext4
 		* ext2
