@@ -1,16 +1,16 @@
-# CSCI340 Inquiry Based Final Project
+# CSCI440 Inquiry Based Final Project
 
 ## Goals
 This project has the following goals:
 
 * Student sets out to answer a question about a topic related to Operating Systems. 
-* Students devise a way to test and/or gain understanding about the question they are trying to ask through a hands on implementation of the concept.
+* Student devises a way to test and/or gain understanding about the question they are trying to ask through a hands-on implementation of the concept.
 	* Should come up with a procedure or method for testing the effectiveness of known solutions or their solutions.
-* Students write up a document with their findings
+* Student writes up a document with their findings.
 
 
 ## Sample Questions
-Recommended questions, you are welcome to propose a different one but these are pre-approved, if you want to answer a different question you need to get approval so email me with your question and how you plan to test it:
+Recommended questions are shown below; these are pre-approved. If you are interested in answering a different question, you need to get approval first by emailing me with your question and describing how you plan to test it:
 
 * How does the performance of threads in C compare to one of the following languages?
 	* Python (multi-process)
@@ -18,7 +18,7 @@ Recommended questions, you are welcome to propose a different one but these are 
 	* Go
 	* Java
 	* Other (get approval)
-* What file system performs best for small files on Linux? Or alternatively what about for large files? (using dd for benchmarks, don't use IOzone or bonnie++) 
+* What file system performs best for small files on Linux? Or alternatively what about for large files? (using `dd` for benchmarks, do not use IOzone or bonnie++) 
 	* Consider at least 5 of the following filesystems:
 		* ext4
 		* ext2
@@ -33,7 +33,10 @@ Recommended questions, you are welcome to propose a different one but these are 
 	* Go
 	* Java
 	* Other (get approval)
-* As an Extra Credit question: How much does Docker virtualization impact the performance of threads compared to a native system in one of the following languages?
+
+
+In addition to answering one of the questions above, you may get extra credit by also answering the following question:
+* Extra Credit question: How much does Docker virtualization impact the performance of threads compared to a native (or native VM) system in one of the following languages?
 	* C
 	* Python
 	* Rust
@@ -46,24 +49,35 @@ Recommended questions, you are welcome to propose a different one but these are 
 Your project will be graded based on the following components.
 
 * Paper - You will submit a short paper describing the following:
-	* What is your question
-	* Your experimental setup (machine, etc)
-		* Are there any side effects or artifacts related to your experimental setup that might impact your results?
-	* How you ran your tests to answer your question
-	* Test results:
-		* How accurate are they? 
-			* Make sure you run enough tests that your results are accurate enough. 
-		* Do you have variation in your test code? 
-			* DNS threads, matrix multiplication threads, other threaded applications?
-			* Variations in block and file sizes?
-			* Variations in size of data sent via IPC?
-	* Your conclusion/answer to the question
-	* What you learned from answering the question
-* Code - You must submit the code for your project along with the paper submission. 
+	* Your Approved Question
+		* What is your question?
+   		* When describing your question, make sure to include applicable details. For example: if comparing performance, what languages did you compare, and what algorithms did you implement? If comparing file systems, which file systems did you compare? Make sure you are using an approved question and approved languages or file systems.
+	* Your Experimental Setup
+		* Describe the environment where you are completing your testing, including details about your machine configuration such as the amount of CPUs and memory, operating system type and image, etc.
+   		* Are there any side effects or artifacts related to your experimental setup that might impact your results? You should explain any ways that you have minimized noise in your setup that could distort your results.
+	* Your Testing Procedure
+  		* How did you run your tests to answer your question?
+    	* Some things you should be considering in describing your testing procedure: How did you collect your data? To measure performance, what did you use to time your programs?
+	* Your Test Results:
+		* Provide your actual test results, i.e. the mean average and standard deviation of your execution times.
+   		* How accurate are your results? 
+			* How many tests did you run for each case? Make sure you run enough tests that your results are sufficiently robust. It is not uncommon to run 30+ tests for each program.
+   			* What was your margin of error? There is not one perfect margin of error, but you likely want to aim for an MOE around 5-10%.
+      		* What z-score did you use for your confidence value? 
+		* How did you make sure to have enough variation in your test code? 
+			* If comparing the performance of different programming languages, it is expected that you test with multiple algorithms/programs (at least 3). Some examples of programs you might implement include DNS threads, matrix multiplication threads, the Monte Carlo method for calculating pi with threads, or other threaded applications.
+			* If comparing the performance of different file systems, it is expected that you include variations in block and file sizes (at minimum, 3 different block sizes and 3 different file sizes). Make sure you have also defined what you consider a small (or large) file.
+			* If comparing the performance of differing IPC mechanisms, it is expected that you include variation in the size of communication data sent via IPC (i.e. the number of characters sent).
+	* Your Conclusion/Answer To The Question
+  		* Based on your test results, how does the performance compare? Was there a statistically significant difference? How should your results be interpreted?
+	* Your Learning Outcome
+  		* What did you learn from answering the question and completing this inquiry-based project? You can consider what you learned while setting up your experiment, implementing the programs, doing the testing, interpreting the results, researching, etc.
+* Code - You must submit the code for your project along with the paper submission.
+* References - You must clearly reference any resources or source code you used or adapted. References may be included in your code or in a separate document or subfolder.
 
 ## Project Submission
 
-You will submit a tar.gz to INGInious system, the tar.gz should have the following:
+You will submit a tar.gz to INGInious system. The tar.gz should have the following:
 
 * PDF of your paper that discusses your results, analysis, motivation, conclusions, etc. 
 * All of the code for you used for your project. 
