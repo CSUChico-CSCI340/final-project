@@ -58,11 +58,11 @@ Your project will be graded based on the following components.
 	* Your Testing Procedure
   		* How did you run your tests to answer your question?
     	* Some things you should be considering in describing your testing procedure: How did you collect your data? To measure performance, what did you use to time your programs?
-	* Your Test Results:
+	* Your Test Results
 		* Provide your actual test results, i.e. the mean average and standard deviation of your execution times.
    		* How accurate are your results? 
 			* How many tests did you run for each case? Make sure you run enough tests that your results are sufficiently robust. It is not uncommon to run 30+ tests for each program.
-   			* What was your margin of error? There is not one perfect margin of error, but you likely want to aim for an MOE around 5-10%.
+   			* What was your [margin of error](https://en.wikipedia.org/wiki/Margin_of_error)? There is not one perfect margin of error that should be used in all cases, but you likely want to aim for a margin of error around 5-10%.
       		* What z-score did you use for your confidence value? 
 		* How did you make sure to have enough variation in your test code? 
 			* If comparing the performance of different programming languages, it is expected that you test with multiple algorithms/programs (at least 3). Some examples of programs you might implement include DNS threads, matrix multiplication threads, the Monte Carlo method for calculating pi with threads, or other threaded applications.
@@ -73,7 +73,13 @@ Your project will be graded based on the following components.
 	* Your Learning Outcome
   		* What did you learn from answering the question and completing this inquiry-based project? You can consider what you learned while setting up your experiment, implementing the programs, doing the testing, interpreting the results, researching, etc.
 * Code - You must submit the code for your project along with the paper submission.
+	* Include all of your source code and any scripts, Makefiles, etc used to compile and run your code.
+ 	* You do not need to include compiled code, build output directories, files generated at runtime, and other files commonly ignored in a git repo.
 * References - You must clearly reference any resources or source code you used or adapted. References may be included in your code or in a separate document or subfolder.
+	* Include a link (at minimum) to any internet content you have referenced.
+	* If you use Large Language Models (LLMs) and other AI tools, you must cite them. Make sure to include your prompt(s) and details about the AI tool. You may include a link to the full transcript or include it in an appendix. Here are some examples:
+ 		* [How to cite ChatGPT](https://apastyle.apa.org/blog/how-to-cite-chatgpt) (APA style)
+   		* [How do I cite generative AI in MLA style?](https://style.mla.org/citing-generative-ai/) (MLA style)
 
 ## Project Submission
 
@@ -81,8 +87,11 @@ You will submit a tar.gz to INGInious system. The tar.gz should have the followi
 
 * PDF of your paper that discusses your results, analysis, motivation, conclusions, etc. 
 * All of the code for you used for your project. 
-	* Alternatively you can add me to a repository with all your code for the project, and just put a README in the tar.gz with the link to this repository. 
+	* Alternatively you can add me to a repository with all your code for the project, and just put a README in the tar.gz with the link to this repository.
+ * All references should be included in your tar.gz submission.
+ 	* References may be included in your code, in a README.md file, or in a dedicated directory within your project.
+ 	
 	
 ## Extra Credit
 
-You can get an additional 10 points of extra credit for every additional question you answer. 
+You can get up to 10 points of extra credit for every additional question you answer. 
