@@ -35,14 +35,30 @@ Recommended questions are shown below; these are pre-approved. If you are intere
 	* Other (get approval)
 
 
-In addition to answering one of the questions above, you may get extra credit by also answering the following question:
-* Extra Credit question: How much does Docker virtualization impact the performance of threads compared to a native (or native VM) system in one of the following languages?
+Extra Credit question (this is not an alternative to one of the above questions; this must be answered in addition to answering one of the questions above): 
+* (EC) How much does Docker virtualization impact the performance of threads compared to a native (or native VM) system in one of the following languages?
 	* C
 	* Python
 	* Rust
 	* Go
 	* Java
 	* Other (get approval)
+
+
+Answering any of these questions will require several components, including:
+
+* Identify a metric (e.g. the execution time for a specific task)
+* Design a workload and design the experiment. For example:
+	* For comparing performance of threads, choose computationally intensive tasks that are easily parallelizable (CPU intensive, not I/O intensive) such as: DNS (Domain Name System) Resolution, Matrix multiplication, calculating prime numbers.
+ 		* Change the amount of data being passed to the programs, not the number of threads -- choose a number of threads (more than 1), and test each program with this number of threads. For the amount of data, change (for example) the number of names being resolved, the size of the matrix, or the number of points generated (choose at least 3 different amounts to test).
+ 	* For comparing file systems, compare reads and writes on files of different sizes with different block sizes for each file (use at least 3 different file sizes and at least 3 different block sizes for each file)
+ 	* Comparing performance of IPC methods will be similar to comparing threads -- you will need to choose a few computationally intensive tasks to compare.
+  		* Choose a method, e.g. pipes, message queues, shared memory, or local sockets, and implement your choice across each program. You should be comparing different amounts of data with each program.
+* Testing Procedure and Data Collection
+	* You will need to run the workload multiple times for each test case to account for noise, caching effects, and other statistical variance. Consider your margin of error when determining how many times you need to run each workload.
+* Test Results and Quantitative analysis
+	* Calculate and visualize your key performance indicators, then interpret your results.
+ 	* Determine if there are any statistically significant differences.
 
 ## Evaluation
 
@@ -51,7 +67,9 @@ Your project will be graded based on the following components.
 * Paper - You will submit a short paper describing the following:
 	* Your Approved Question
 		* What is your question?
-   		* When describing your question, make sure to include applicable details. For example: if comparing performance, what languages did you compare, and what algorithms did you implement? If comparing file systems, which file systems did you compare? Make sure you are using an approved question and approved languages or file systems.
+   		* When describing your question, make sure to define the workload, including any applicable details. For example:
+     		* If comparing performance, what languages did you compare, and what algorithms did you implement?
+       		* If comparing file systems, which file systems did you compare? Make sure you are using an approved question and approved languages or file systems.
 	* Your Experimental Setup
 		* Describe the environment where you are completing your testing, including details about your machine configuration such as the amount of CPUs and memory, operating system type and image, etc.
    		* Are there any side effects or artifacts related to your experimental setup that might impact your results? You should explain any ways that you have minimized noise in your setup that could distort your results.
@@ -59,15 +77,15 @@ Your project will be graded based on the following components.
   		* How did you run your tests to answer your question?
     	* Some things you should be considering in describing your testing procedure: How did you collect your data? To measure performance, what did you use to time your programs?
 	* Your Test Results
-		* Provide your actual test results, i.e. the mean average and standard deviation of your execution times.
+		* Provide your actual test results, e.g. the mean average and standard deviation of your execution times.
    		* How accurate are your results? 
 			* How many tests did you run for each case? Make sure you run enough tests that your results are sufficiently robust. It is not uncommon to run 30+ tests for each program.
-   			* What was your [margin of error](https://en.wikipedia.org/wiki/Margin_of_error)? There is not one perfect margin of error that should be used in all cases, but you likely want to aim for a margin of error around 5-10%.
+   			* What was your [margin of error](https://en.wikipedia.org/wiki/Margin_of_error)? There is not one perfect margin of error that should be used in all cases, but for this project, an acceptable goal is to aim for a margin of error around 5-10%.
       		* What z-score did you use for your confidence value? 
 		* How did you make sure to have enough variation in your test code? 
-			* If comparing the performance of different programming languages, it is expected that you test with multiple algorithms/programs (at least 3). Some examples of programs you might implement include DNS threads, matrix multiplication threads, the Monte Carlo method for calculating pi with threads, or other threaded applications.
-			* If comparing the performance of different file systems, it is expected that you include variations in block and file sizes (at minimum, 3 different block sizes and 3 different file sizes). Make sure you have also defined what you consider a small (or large) file.
-			* If comparing the performance of differing IPC mechanisms, it is expected that you include variation in the size of communication data sent via IPC (i.e. the number of characters sent).
+			* If comparing the performance of different programming languages, it is expected that you test with multiple computationally intensive algorithms/programs (at least 3). Some examples of programs you might implement include DNS threads, matrix multiplication threads, the Monte Carlo method for calculating pi with threads, or other threaded applications.
+			* If comparing the performance of different file systems, it is expected that you include variations in block and file sizes (at minimum, 3 different file sizes and 3 different block sizes for each file size). Make sure you have also defined what you consider a small (or large) file.
+			* If comparing the performance of differing IPC mechanisms, it is expected that you include variation in the size of communication data sent via IPC.
 	* Your Conclusion/Answer To The Question
   		* Based on your test results, how does the performance compare? Was there a statistically significant difference? How should your results be interpreted?
 	* Your Learning Outcome
