@@ -47,18 +47,24 @@ Extra Credit question (this is not an alternative to one of the above questions;
 
 Answering any of these questions will require several components, including:
 
-* Identify a metric (e.g. the execution time for a specific task)
-* Design a workload and design the experiment. For example:
-	* For comparing performance of threads, choose computationally intensive tasks that are easily parallelizable (CPU intensive, not I/O intensive) such as: DNS (Domain Name System) Resolution, Matrix multiplication, calculating prime numbers.
- 		* Change the amount of data being passed to the programs, not the number of threads -- choose a number of threads (more than 1), and test each program with this number of threads. For the amount of data, change (for example) the number of names being resolved, the size of the matrix, or the number of points generated (choose at least 3 different amounts to test).
+* Identify a Metric
+	* Determine what you will be comparing, e.g. the execution time for a specific task
+* Design an Experiment
+	* For comparing performance of threads, choose computationally intensive tasks that are easily parallelizable (CPU intensive, not I/O intensive) such as: DNS (Domain Name System) Resolution, Matrix Multiplication, Monte Carlo (estimation of pi)
+ 		* Change the amount of data being passed to the programs, not the number of threads -- choose a number of threads (more than 1), and test each program with this number of threads. For the amount of data, change (for example) the number of names being resolved, the size of the matrix, or the number of points generated (test each program with at least 3 different amounts of data).
  	* For comparing file systems, compare reads and writes on files of different sizes with different block sizes for each file (use at least 3 different file sizes and at least 3 different block sizes for each file)
  	* Comparing performance of IPC methods will be similar to comparing threads -- you will need to choose a few computationally intensive tasks to compare.
-  		* Choose a method, e.g. pipes, message queues, shared memory, or local sockets, and implement your choice across each program. You should be comparing different amounts of data with each program.
+  		* Choose a method, e.g. pipes, message queues, shared memory, or local sockets, and implement this method across each program. You should be comparing different amounts of data with each program.
 * Testing Procedure and Data Collection
 	* You will need to run the workload multiple times for each test case to account for noise, caching effects, and other statistical variance. Consider your margin of error when determining how many times you need to run each workload.
-* Test Results and Quantitative analysis
-	* Calculate and visualize your key performance indicators, then interpret your results.
+ 	* If you only run 1 or a couple tests, any results you get could be misleading. To get a meaningful result, you need a large enough sample size and conditions that are as consistent as possible. 
+* Test Results and Quantitative Analysis
+	* Calculate your key performance indicators and interpret your results.
+ 		* e.g. consider the mean average execution time and range of execution times
+   		* It may help to visualize your results with one or more charts or graphs.  
  	* Determine if there are any statistically significant differences.
+    * Consider if any operating systems concepts can help explain your results (what factors influence performance?)
+    * Your answer to your project question should be based on the evidence presented in the report.
 
 ## Evaluation
 
